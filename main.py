@@ -55,11 +55,8 @@ while guess != secret_number and attempts < max_attempts:
     
     if guess < secret_number:
         print("Too low")
-    elif guess > secret_number:
-        print("Too high")
     else:
-        print("You got it!")
-        break
+        print("Too high")
 
     # calculate and display the remaining attempts
     remaining_attempts = max_attempts - attempts
