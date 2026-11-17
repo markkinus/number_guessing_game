@@ -36,7 +36,7 @@ Players can choose from three difficulty levels, each with a different number of
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/markkinus/number_guessing_game.git
 ```
 
 ### 2. Navigate into the project folder
@@ -86,4 +86,4 @@ This project was developed to practice fundamental Python programming concepts, 
 
 ## License
 
-This project is open-source and available for learning and educational purposes.
+This project is licensed under the [MIT License](LICENSE).
