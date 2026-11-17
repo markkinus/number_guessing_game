@@ -34,6 +34,7 @@ else:
     print("Invalid choice. Defaulting to Easy difficulty.")
     max_attempts = 10
 
+# initialize attempts
 attempts = 0    
 
 # input to guess a number between 1 and 100
@@ -41,7 +42,7 @@ guess = int(input("Guess a number between 1 and 100: "))
 attempts += 1
     
 # loop until the guess is correct
-while guess != secret_number:
+while guess != secret_number and attempts < max_attempts:
     
     if guess < secret_number:
         print("Too low")
@@ -50,6 +51,10 @@ while guess != secret_number:
     guess = int(input("Guess again: "))
     attempts += 1 
 
-print("You got it!")
-print(f"It took you {attempts} attempts.")
-
+# check if the guess is correct or if the user ran out of attempts
+if guess == secret_number:
+    print("You got it!")
+    print(f"It took you {attempts} attempts.")
+else:
+    print("You ran out of attempts.")
+    print(f"The number was {secret_number}.")
